@@ -1,7 +1,10 @@
 <!doctype html>
-<html ng-app>
+<html ng-app="hackerListApp">
   <head>
+    <!--JS-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.3/angular.min.js"></script>
+    <script src="js/hackerlist.js"></script>
+    <!--CSS-->
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
   </head>
   <body>
@@ -11,7 +14,7 @@
       <hr>
       <h1>HackerList {{yourName}}!</h1>
     </div>
-    <div class="hacker-list">
+    <div class="hacker-list" ng-controller="HackerListController">
       <ol>
         <!--image thumbnail, clickable to their github or personal website-->
         <li>Avi Romanoff</li>
