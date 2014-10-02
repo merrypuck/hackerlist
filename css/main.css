@@ -1,5 +1,14 @@
 .centered {
     text-align: center;
-    list-style-position:inside;
+    margin: 0 auto;
 }
 
+.hacker-list {
+    list-style-position:inside;
+    list-style: none;
+    width: 320px;
+}
+
+body {
+    background-color: blue;
+}
