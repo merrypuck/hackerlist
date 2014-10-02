@@ -6,16 +6,13 @@
     <script src="js/hackerlist.js"></script>
     <!--CSS-->
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <div>
-      <label>Name:</label>
-      <input type="text" ng-model="yourName" placeholder="Enter a name here">
-      <hr>
-      <h1>HackerList {{yourName}}!</h1>
-    </div>
-    <div class="hacker-list" ng-controller="HackerListController">
-      <ol>
+    <div class="hacker-list centered" ng-controller="HackerListController">
+      <h1>Hacker List</h1>
+      <p>Watch out for these hackers the rest of hackathon season.</p>
+      <ol class="hacker-ordered-list centered">
         <!--image thumbnail, clickable to their github or personal website-->
         <li>Avi Romanoff</li>
         <li>Zach Latta</li>
@@ -28,14 +25,15 @@
         <li>Zach Latta</li>
         <li>Lucy Guo</li>        
       </ol>
-    </div>
-    <div class="footer">
-      <p>Want to be on the list?</p>
-      <button>Sign in with Github</button>
+        <div class="footer">
+        <p>Want to be on the list?</p>
+        <button>Sign in with Github</button>
 
-      <p>Know somepone who should be on the list?</p>
-      <label>Their github:</label>
-      <input type="text" ng-model="yourName" placeholder="https://github.com/feross">
+        <p>Know somepone who should be on the list?</p>
+        <label>Their github:</label>
+        <input type="text" ng-model="yourName" placeholder="https://github.com/feross">
+      </div>
     </div>
+
   </body>
 </html>
