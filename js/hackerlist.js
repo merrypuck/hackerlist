@@ -1,8 +1,9 @@
 angular.module('hackerListApp', [])
   .controller('HackerListController', ['$scope', function($scope) {
-    $scope.todos = [
-      {text:'learn angular', done:true},
-      {text:'build an angular app', done:false}];
+    $scope.hackers = [
+      {name:'Avi Romanoff', thumbnail:true, link:'blah.com'},
+      {name:'Zach Latta', thumbnail:true, link:'blah.com'},
+      {name:'Lucy Guo', thumbnail:false, link:'blah.com'}];
  
     $scope.addTodo = function() {
       $scope.todos.push({text:$scope.todoText, done:false});

@@ -9,23 +9,27 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
+  <!--
     <div class="centered" ng-controller="HackerListController">
       <h1>Hacker List</h1>
-      <p>Watch out for these hackers the rest of hackathon season.</p>
-      <ul class="hacker-list centered">
-        <!--image thumbnail, clickable to their github or personal website-->
-        <li>Avi Romanoff</li>
-        <li>Zach Latta</li>
-        <li>Zach Latta</li> 
-        <li>Zach Latta</li> 
-        <li>Zach Latta</li> 
-        <li>Zach Latta</li>   
-        <li>Zach Latta</li> 
-        <li>Zach Latta</li> 
-        <li>Zach Latta</li>
-        <li>Lucy Guo</li>        
-      </ul>
-        <div class="footer">
+      <p>Watch out for these hackers the rest of hackathon season.</p>-->
+      <!--trying table-->
+        <div class="promo scale centered" ng-controller="HackerListController">
+          <div class="deal">
+            <span>Hacker List</span>
+            <span>Watch out for these hackers the rest of Hackathon Season!</span>
+          </div>
+          <span class="price">Hacker List</span>
+          <ul class="features">
+            <li ng-repeat="hacker in hackers">
+              <span>{{hacker.name}}</span>
+            </li> 
+          </ul>
+          <span class="price">Want to be on the list?</span>
+          <button>Sign in with Github</button>
+        </div>
+<!--
+      <div class="footer">
         <p>Want to be on the list?</p>
         <button>Sign in with Github</button>
 
@@ -34,6 +38,6 @@
         <input type="text" ng-model="yourName" placeholder="https://github.com/feross">
       </div>
     </div>
-
+-->
   </body>
 </html>
